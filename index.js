@@ -6,6 +6,7 @@ const layout = require("./views/layout");
 
 const { db } = require('./models');
 
+
 app.use(morgan("dev"));
 app.use(express.static(__dirname + "/public"));
 
@@ -23,8 +24,9 @@ const models = require('./models')
 const PORT = 1337;
 //other stuff?
 const init = async () => {
-  await models.User.sync()
-  await models.Page.synch()
+  // await models.User.sync()
+  // await models.Page.sync()
+  await db.sync()
   //make sure you have a port constant and replace the name bloew with your express app
   app.listen(PORT, () => {
     console.log(`App listening in port ${PORT}`);
@@ -32,7 +34,7 @@ const init = async () => {
   
 }
 
-// init()
+ init()
 
 
 
