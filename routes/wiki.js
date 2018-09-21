@@ -10,8 +10,8 @@ router.get("/", (req, res, next) => {
 router.post("/", async (req, res, next) => {
   //   res.send("got to POST /wiki/");
   const page = new Page({
-    title: `???????`,
-    content: `???????`
+    title: req.body.title,
+    content: req.body.content
   });
   //   res.json(req.body);
   try {

@@ -23,7 +23,7 @@ const Page = db.define("page", {
   }
 });
 
-Page.beforeValidate((pageInstance, options) => {
+Page.beforeValidate((pageInstance) => {
   pageInstance.slug = genSlug(pageInstance.title);
 });
 

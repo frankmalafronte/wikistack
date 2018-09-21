@@ -30,16 +30,16 @@ module.exports = () =>
     </div>
 
     <div class="form-group">
-      <label for="content-textarea" class="col-sm-2 control-label">Content Text</label>
+      <label for="content" class="col-sm-2 control-label">Content Text</label>
       <div class="col-sm-10">
-        <input id="content-textarea" name="content-textarea" type="text" class="form-control"/>
+        <input id="content" name="content" type="text" class="form-control"/>
       </div>
     </div>
     
     <div class="form-group">
-      <label for="page-status" class="col-sm-2 control-label">Page Status</label>
+      <label for="status" class="col-sm-2 control-label">Page Status</label>
       <div class="col-sm-10">
-        <input id="page-status" name="page-status" type="text" class="form-control"/>
+        <input id="status" name="status" type="text" class="form-control"/>
       </div>
     </div>
 
